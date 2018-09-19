@@ -1,0 +1,42 @@
+
+# This is a pretty  simple node project. Aside from the project
+    dependencies, which are not many, you'll need mongodb to be
+    running on port 27017, its default, and you'll also need to
+    run a newer version of node. If you use nvm, you can simply
+    install and switch to a newer node installation.
+
+# To install dependencies, run `npm install`
+# To run the server, run `npm start`
+
+# If your mongo installation requires a username and password, or
+    is on a machine other than localhost, please update the
+    connection string in server.js to your setup.
+
+# I purposefully omitted, rather skipped, unit and integration
+    tests as anything that I find will be irrelevant if you at
+    98point6 find that something is broken. This is my first time
+    using Hapi.js instead of express, so there may be some
+    non-best-practices in my code that I'm unaware of. My
+    apologies if these include pet-peeves of yours.
+
+# My decision to use node.js for this was prompted by a few factors.
+    First being that my most recent experience was in using node
+    for API development so I naturally defaulted to it. Second -
+    as I was thinking about how to approach this assignment and
+    what the resulting code would look like - I wanted to avoid
+    boilerplate code as possible so I didn't consider Java for this.
+
+# Included below is a link to a Postman library. Instead of unit
+    and integration tests I chose to use postman to test each
+    endpoint in a manner that made sense given the time and
+    requirements.
+    https://www.getpostman.com/collections/55f6dca9fbaace4b742c
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "name": "droptoken",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "hapi": "17.5.4",
+    "hapi-async-handler": "1.0.3",
+    "hapi-mongodb": "7.1.0",
+    "mongoose": "5.2.15",
+    "underscore": "1.9.1"
+  },
+  "scripts": {
+
+  },
+  "author": "",
+  "engine": "node >= 8.0.0"
+}
+}
