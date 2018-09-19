@@ -13,8 +13,8 @@
     connection string in server.js to your setup.
 
 # I purposefully omitted, rather skipped, unit and integration
-    tests as anything that I find will be irrelevant if you at
-    98point6 find that something is broken. This is my first time
+    tests as anything that I find will be irrelevant if you
+    find that something is broken. This is my first time
     using Hapi.js instead of express, so there may be some
     non-best-practices in my code that I'm unaware of. My
     apologies if these include pet-peeves of yours.
