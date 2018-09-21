@@ -36,6 +36,7 @@ function checkDiagonalsForWinner(board, playerId ) {
         diagonal.push(board[maxColumnSize-x][x-1] )
     }
 
+    // -- these next 2 lines could be made into a closure and passed to evaluate
     diagonal = diagonal.map( x => x).filter(x => x);
     // 4 in a row of all the same
     return diagonal.length === inARowNeeded && diagonal.every( token => token === playerId)
@@ -98,7 +99,7 @@ function shouldCheckForWinner( { move_history, board_status }) {
 }
 
 function createBoard(boardOptions) {
-    const { rows, columns, players } = boardOptions
+    const { rows, columns, players } = boardOptions;
     if (isNaN(rows) || isNaN(columns)
         || rows < 4 || columns < 4
         || !players || players.length !== 2 ) {

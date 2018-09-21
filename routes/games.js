@@ -1,6 +1,6 @@
 const gameService = require('../services/games');
 const board = require('../services/board');
-const { notAcceptable, notFound }  = require('../services/errors');
+const { notAcceptable, notFound, gameIsDone }  = require('../services/errors');
 
 const underscore = require('underscore');
 const Boom = require('boom');
@@ -13,6 +13,7 @@ const routes = [
             try {
                 const gamesInProgress = {state: 'IN_PROGRESS'};
                 const games = await gameService.getAllGames(gamesInProgress);
+                //mongo projection
                 const ids = underscore.pluck(games, '_id');
                 return {games: ids};
             } catch (err) {

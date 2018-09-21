@@ -13,8 +13,9 @@ async function createGame(opts){
     return await game.save();
 }
 
+/** this only works for 2 players *//
 function playerToMove(player, players, moves) {
-    return moves.length % 2 === players.indexOf(player);
+    return moves.length % players.length === players.indexOf(player);
 }
 
 
@@ -26,7 +27,7 @@ async function playMove(game, move) {
         if (index > -1) {
             game.state = 'DONE';
             game.players.splice(index, 1);
-            game.winner = game.players[0];
+            game.winner = game.players[0]; // only works for 2 player games
 
             let move_history = game.move_history || [];
             move_history.push(Object.assign(move, {type: 'QUIT'}));
